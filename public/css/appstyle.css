@@ -1,0 +1,207 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+.logo{
+    width: 180px;
+    height: 70px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF9F9;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    background: #FFF9F9;
+}
+.div_titulo{
+
+    position: absolute;
+    width: 1455px;
+    height: 100px;
+    left: -22px;
+    top: 163px;
+    background: #026700;
+}
+.titulo{
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-size: 100px;
+line-height: 100px;
+text-align: center;
+
+color: #FEFEFE;
+}
+
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    background: #FFF9F9;
+    background-size: cover;
+    background-position: center center;
+}
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+:root {
+	--logotipo: #1a1a1a;
+	--profesion: #f2f2f2;
+	--primario: #2e5fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Bebas Neue', cursive;
+	background-image: url('./../img/fondos-de-colores-3.jpg.jpeg'); 
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+	max-width: 800px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logotipo {
+	padding: 10px;
+	border: 5px solid var(--logotipo);
+	color: var(--logotipo);
+}
+
+.logotipo .subtitulo {
+	text-align: center;
+	color: var(--profesion);
+	background: var(--logotipo);
+	padding: 12px 20px;
+	transition: .5s ease all;
+	font-size: 36px;
+	font-family: 'Noto Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logotipo:hover .subtitulo {
+	background: var(--primario);
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.container > div{
+	width: 50%;
+}
+.left{ background:cadetblue;}
+.right{	
+	background-repeat:no-repeat;
+	background-size: cover;
+ } 
+.texto-animado {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.texto-animado > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+
+.texto-animado > div.animacion {
+	transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+	font-size: 100px;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 100px;
+}
+
+@media screen and (max-width: 600px){
+	.texto-animado > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.texto-animado .segunda-linea {
+		top: 50px;
+	}
+
+	.texto-animado > div.animacion {
+		transform: translateY(-50px);
+	}
+
+	.logotipo .subtitulo {
+		font-size: 20px;
+	}
+}
